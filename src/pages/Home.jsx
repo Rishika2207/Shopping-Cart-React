@@ -20,7 +20,7 @@ const Home = () => {
     const {data:products,status}=useSelector((state)=>state.product)
     useEffect(()=>{
       dispatch(fetchProduct());
-    },[])
+    },[dispatch])
     const handleAdd=(product)=>{
         dispatch(add(product))
     }

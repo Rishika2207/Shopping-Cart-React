@@ -9,6 +9,7 @@ const cartSlice=createSlice({
                 if(item.id===action.payload.id){
                     isPresent=true;
                 }
+                return 0;
             })
             if(!isPresent){
                 state.push(action.payload);
